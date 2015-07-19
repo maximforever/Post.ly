@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 	
 	def index
-		@posts = Post.order(created_at: :desc).all
+		@new_post = Post.new
+		@all_posts = Post.order(created_at: :desc).all
 	end
 
 	def new 
@@ -11,13 +12,11 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 		if @post.save
-			redirect_to '/posts'
+			redirect_to root_path
 		else
-			render '/new'
+			render 'root_path'
 		end
 	end
-
-	
 
 	private
 

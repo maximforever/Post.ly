@@ -1,7 +1,20 @@
 
 <%= link_to "New Post", 'post/new' %>
 
-<% @posts.each do |p| %>
+
+<div>
+	<%= form_for (@new_post) do |f| %>
+		<p><%= f.label :post %></p>
+		<p><%= f.text_field :author, placeholder: "Author" %></p>
+		<p><%= f.text_area :content, rows: 5, placeholder: "Enter Post"  %></p>
+		<p>
+			<%= f.submit "Enter Post" %>
+		</p>
+	<% end %>
+</div>
+
+
+<% @all_posts.each do |p| %>
 	<div class = "post">
 		<div class = "heading">
 			<%= p.id %>. <%= p.author %>
