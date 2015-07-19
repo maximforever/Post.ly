@@ -1,0 +1,28 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.heading {
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 18;
+	color: #606060;
+}
+
+.content {
+	font-family: 'Verdana';
+	font-size: 14px;
+	color: black;
+}
+
+.date {
+	font-family: 'Verdana';
+	font-size: 10px;
+	color: #606060;
+}
+
+.post{
+	padding: 8px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}

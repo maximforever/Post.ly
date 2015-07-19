@@ -1,0 +1,25 @@
+
+<%= link_to "New Post", 'post/new' %>
+
+<% @posts.each do |p| %>
+	<div class = "post">
+		<p class = "heading">
+			<%= p.id %>. <%= p.author %>
+		</p>
+		
+		<p class = "content">
+			<%= p.content %>
+		</p>
+		
+
+		<p class = "date">
+			Posted at: <%= p.created_at %>
+		</p>
+
+	</div>	
+<% end %>
+
+
+
+
+
