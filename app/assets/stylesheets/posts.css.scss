@@ -1,6 +1,9 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	width: 99%;
+}
 
 .heading {
 	font-family: 'Arial';
@@ -25,4 +28,44 @@
 	padding: 8px;
 	border: 1px solid black;
 	margin-bottom: 5px;
+}
+
+.poster{
+	text-align: center;
+	border: 3px solid black;
+	margin: 3px;
+}
+
+.poster div {
+	margin: 10px 0 10px 0;
+}
+
+form input[type=text]{
+background:#f0f0f0;
+width: 30%;
+border:none;
+border-left:2px solid #fff;
+font-size:16px;
+font-family:Montserrat, sans-serif;
+padding:5px;
+}
+
+.main-content{
+resize: none;
+background:#f0f0f0;
+width: 30%;
+border:none;
+border-left:2px solid #fff;
+font-size:16px;
+font-family:Montserrat, sans-serif;
+padding:5px;
+}
+
+.button {
+background:#f0f0f0;
+border:none;
+color:#2e9dbf;
+cursor:pointer;
+font-size:16px;
+padding:10px;
 }

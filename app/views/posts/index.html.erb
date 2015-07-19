@@ -2,14 +2,13 @@
 <%= link_to "New Post", 'post/new' %>
 
 
-<div>
+<div class = "poster">
 	<%= form_for (@new_post) do |f| %>
-		<p><%= f.label :post %></p>
-		<p><%= f.text_field :author, placeholder: "Author" %></p>
-		<p><%= f.text_area :content, rows: 5, placeholder: "Enter Post"  %></p>
-		<p>
-			<%= f.submit "Enter Post" %>
-		</p>
+		<div><%= f.text_field :author, placeholder: "Author" %></div>
+		<div><%= f.text_area :content, rows: 5, placeholder: "Enter Post", :class => 'main-content'  %></div>
+		<div>
+			<%= f.submit "Enter Post", :class => 'button' %>
+		</div>
 	<% end %>
 </div>
 
