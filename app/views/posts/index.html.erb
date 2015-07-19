@@ -3,18 +3,18 @@
 
 <% @posts.each do |p| %>
 	<div class = "post">
-		<p class = "heading">
+		<div class = "heading">
 			<%= p.id %>. <%= p.author %>
-		</p>
+		</div>
 		
-		<p class = "content">
+		<div class = "content">
 			<%= p.content %>
-		</p>
+		</div>
 		
 
-		<p class = "date">
+		<div class = "date">
 			Posted at: <%= p.created_at %>
-		</p>
+		</div>
 
 	</div>	
 <% end %>
